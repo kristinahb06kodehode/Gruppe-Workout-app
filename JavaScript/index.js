@@ -2,7 +2,7 @@
 function saveInputData() {
   const data = {};
 
-  // Loop through all input fields and save their values
+  // Loop through all input text fields with unique ID and save their values
   document.querySelectorAll('input[type="text"]').forEach((input) => {
     data[input.id] = input.value;
   });
@@ -12,7 +12,7 @@ function saveInputData() {
 }
 
 // Function to load the input data from Local Storage
-function loadInputData() {
+function loadInputData(week) {
   const savedData = localStorage.getItem("workoutData");
   if (savedData) {
     const data = JSON.parse(savedData);
