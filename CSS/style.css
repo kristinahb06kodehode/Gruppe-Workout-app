@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Jockey One, sans-serif;
+}
+
+h3 {
+  text-align: center;
+}
+
+#main {
+  background-color: #345830;
+  color: whitesmoke;
+  display: grid;
+  grid-template-rows: 48px, auto, 225px;
+  width: 393px;
+  height: 852px;
+  border-radius: 24px;
+}
+
+#content {
+  overflow: auto;
+  height: 620px;
+}
+
+.workout-log {
+  grid-row-start: 1;
+  background-color: #48775b;
+  border-radius: 24px 24px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day1 {
+  border: 2px solid black;
+  width: 371px;
+  height: 216px;
+  padding: 1px;
+}
