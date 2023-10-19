@@ -27,6 +27,20 @@ function loadInputData(week) {
   }
 }
 
+// Event listener for the "Clear Data" button!
+document.querySelector("#clear-btn").addEventListener("click", function () {
+  // Clear saved data in local storage
+  localStorage.removeItem("workoutData");
+
+  // Clear text fields!
+  const inputFields = document.querySelectorAll(
+    ".exercise-input, .rep-input, .weight-input"
+  );
+  inputFields.forEach((input) => {
+    input.value = "";
+  });
+});
+
 // Attach an event listener to the save button
 const saveButton = document.querySelector(".save-btn");
 if (saveButton) {
