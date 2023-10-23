@@ -14,12 +14,15 @@ body {
   align-items: center;
   height: 100vh;
   font-family: Jockey One, sans-serif;
+  
 }
 
 h3 {
   text-align: center;
   font-size: 25px;
+  
 }
+
 
 #main {
   display: flex;
@@ -46,6 +49,7 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 380px;
+  color: (to bottom, #e9e9e9 5%, #b5b5b57b 100%);
 
 }
 
@@ -112,27 +116,34 @@ label {
 }
 
 
-
+.allButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 80px;
+}
 
 button {
-	box-shadow:inset 0px 1px 0px 0px #a4e271;
-	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
-	background-color:#89c403;
+	box-shadow:inset 0px 1px 0px 0px #739e50ae;
+	background:linear-gradient(to bottom, #e9e9e9 5%, #b5b5b57b 100%);
+	background-color:#345830;
 	border-radius:6px;
-	border:1px solid #74b807;
+	border:2px solid #48775B;
 	cursor:pointer;
-	color:#ffffff;
+	color:#345830;
 	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
-	padding:6px 24px;
+	padding:12px 34px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #528009;
+	text-shadow:0px 1px 0px #a1a1a1;
   
 }
 button:hover {
-	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
-	background-color:#77a809;
+	background:linear-gradient(to bottom, #3f7a2bac 5%, #6b803a7d 100%);
+	background-color:#6fb95687;
+  color: #e9e9e9;
+  border:2px solid #e9e9e9;
 }
 button:active {
 	position:relative;
