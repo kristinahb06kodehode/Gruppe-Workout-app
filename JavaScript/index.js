@@ -12,7 +12,7 @@ function saveInputData() {
 }
 
 // Function to load the input data from Local Storage
-function loadInputData(week) {
+function loadInputData(loadinput) {
   const savedData = localStorage.getItem("workoutData");
   if (savedData) {
     const data = JSON.parse(savedData);
