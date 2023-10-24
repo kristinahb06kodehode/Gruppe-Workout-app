@@ -2,7 +2,7 @@
 function saveInputData() {
   const data = {};
 
-  // Loop through all input fields and save their values
+  // Loop through all input text fields with unique ID and save their values
   document.querySelectorAll('input[type="text"]').forEach((input) => {
     data[input.id] = input.value;
   });
@@ -12,7 +12,7 @@ function saveInputData() {
 }
 
 // Function to load the input data from Local Storage
-function loadInputData() {
+function loadInputData(loadinput) {
   const savedData = localStorage.getItem("workoutData");
   if (savedData) {
     const data = JSON.parse(savedData);
@@ -26,6 +26,20 @@ function loadInputData() {
     }
   }
 }
+
+// Event listener for the "Clear Data" button!
+document.querySelector("#clear-btn").addEventListener("click", function () {
+  // Clear saved data in local storage
+  localStorage.removeItem("workoutData");
+
+  // Clear text fields!
+  const inputFields = document.querySelectorAll(
+    ".exercise-input, .rep-input, .weight-input"
+  );
+  inputFields.forEach((input) => {
+    input.value = "";
+  });
+});
 
 // Attach an event listener to the save button
 const saveButton = document.querySelector(".save-btn");
